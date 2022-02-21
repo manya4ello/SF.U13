@@ -45,6 +45,7 @@ namespace CountWords
                 Console.WriteLine($"Среднее за {runs} проходов:");
                 Console.Write(AvgList);
                 Console.WriteLine($"\t{AvgLList}");
+                Console.WriteLine($"На {runs} проходов время добавления строк в List, по сравнению с Linked list {SumList*100 / SumLList :F2}% ");
             }
             else
                 Console.WriteLine("Файл не найден");
