@@ -33,6 +33,8 @@ namespace CountWords
                 }
                 while (!int.TryParse(input, out minlength) ||(minlength < 0));
 
+                Console.WriteLine("Ожидайте...");
+
                 foreach (string word in Dic)
                     if (word.Length < minlength)
                         Dic.Remove(word);
@@ -51,7 +53,7 @@ namespace CountWords
                 }
 
                 
-                var wordnumbers = WordCount.ToArray();
+                var wordnumbers = WordCount.ToArray(); //возможно есть более элегантное решение, но дальше со словарем неудобно работать - сортировать и выводить топ-10
                 for (int i = 0; i < wordnumbers.Length; i++)
                     for (int j = i; j < wordnumbers.Length; j++)
                     {
