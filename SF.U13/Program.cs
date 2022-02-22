@@ -21,7 +21,7 @@ namespace CountWords
                 {
                     input = Console.ReadLine();
                 }
-                while (!int.TryParse(input, out runs));
+                while (!int.TryParse(input, out runs)||(runs<1));
 
                 double [] liststat = new double[runs];
                 double [] linkedliststat = new double[runs];
